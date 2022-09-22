@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>盲水印测试</title>
+    <link rel="stylesheet" href="{{ static_url("blog.css") }}" type="text/css">
+    {% block head %}{% end %}
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        <h1>盲水印测试</h1>
+      </div>
+      <div id="content">{% block body %}{% end %}</div>
+    </div>
+    {% block bottom %}{% end %}
+  </body>
+</html>

@@ -1,0 +1,5 @@
+warter_mark:
+  build: .
+  ports:
+    - "8888:8888"
+  command:

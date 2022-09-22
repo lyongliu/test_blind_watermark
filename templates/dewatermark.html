@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <div>解水印</div>
+  <div>
+    <form action="/dewatermark" method="POST"  enctype="multipart/form-data">
+    <input type="file" title="选择图片"
+    id="avatar" name="avatar"
+    accept="image/png, image/jpeg"/>
+    <button type="submit">上传图片</button>
+    </form>
+    <div>
+      解水印前图片
+    </div>
+    <div>
+      <img  height=150 src="{{ static_url('dewatermark/origin.png') }}" >
+      
+    </div>
+
+    <div>
+      水印图
+    </div>
+    <div>
+      <img   height=150 src="{{ static_url('dewatermark/result.png') }}" >
+      
+    </div>
+
+    <a href="/"> 加水印</a>
+   </div>
+{% end %}
